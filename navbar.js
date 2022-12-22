@@ -11,7 +11,10 @@ export const navbar = [
     text: 'Guide',
     children: [
       '/guide/getting-started/',
-      '/guide/first-iso/',
+      {
+        link: '/guide/iso-build/how-to-build',
+        text: 'Iso Build',
+      },
       {
         link: '/guide/specs-repo/overview',
         text: 'Specs Repository',
