@@ -1,8 +1,8 @@
 # Testing
 
-To really rest you role, we recommend you to create a new branch in your spec repo and create a iso referencing that branch.
+To really test your role, we recommend to create a new branch in your spec repo and create an iso referencing that branch.
 
-For early development of your ansible role, you might simply checkout your role into the correct directory and create a small `test.yml` playbook to call with `ansible-playbook test.yml`
+For early development of your Ansible role, you might simply checkout your role into the correct directory and create a small `test.yml` playbook to call with `ansible-playbook test.yml`
 
 ```yaml
 ---
