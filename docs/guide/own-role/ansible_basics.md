@@ -1,3 +1,6 @@
+---
+prev: { link: "../specs-repo/structure.md", text: "Specs Repository - Structure"}
+---
 # Ansible Basics
 
 Ansible is an automation engine for various different tasks. In the case of Potos it is used to bring clients into the desired state and mostly also to regularly enforce that state.
