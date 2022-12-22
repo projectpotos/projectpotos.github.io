@@ -1,0 +1,26 @@
+{
+  "name": "potos",
+  "version": "1.0.0",
+  "description": "Project Potos",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectpotos/projectpotos.github.io.git"
+  },
+  "author": "Project Potos",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/projectpotos/projectpotos.github.io/issues"
+  },
+  "homepage": "https://github.com/projectpotos/projectpotos.github.io#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.59"
+  }
+}
