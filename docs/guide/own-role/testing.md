@@ -1,3 +1,7 @@
+---
+next: { link: "../faq/", text: "FAQ"}
+---
+
 # Testing
 
 To really test your role, we recommend to create a new branch in your spec repo and create an iso referencing that branch.
