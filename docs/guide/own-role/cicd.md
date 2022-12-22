@@ -4,7 +4,7 @@ To ensure certain qualities in our Ansible roles, we use automated testing with 
 
 ## Automated Molecule tests
 
-We want to ensure the defined [molecule tests](./molecule) always succeed and we follow the yaml/ansible lint for a consistent code quality, so we have the following Github Workflow:
+We want to ensure the defined [Molecule tests](./molecule) always succeed and we follow the yaml/ansible lint for a consistent code quality, so we have the following Github Workflow:
 
 ```yaml
 ---
@@ -44,11 +44,11 @@ jobs:
 
 ## Commit message linting
 
-We commit our self to only use [Conventional Commits](https://www.conventionalcommits.org) messages. Thus we have a linter installed, rejecting any commits not follwing this standard.
+We are committed to using only [Conventional Commits](https://www.conventionalcommits.org) messages. Thus we have a linter installed, rejecting any commits which are not following this standard.
 
-## Semantic Versioning
+## Semantic versioning
 
-To allow referencing specific versions of a Ansible role in the Specs Repository, with each merged PR into the main branch an new version according to the [Semantic Versioning](https://semver.org/) convention is released.
+To allow referencing specific versions of an Ansible role in the Specs Repository, each merged PR into the main branch releases a new version according to the [Semantic versioning](https://semver.org/) convention.
 We do not release the new version `x.y.z` but also update the tags to `x.y` and `x`, to allow for a more relaxed version definition.
 
 
