@@ -1,8 +1,8 @@
-# How to build a ISO
+# How to build an ISO
 
 Make sure you have your [`config/`](./config) directory available. 
-For your first ISO build tests we recommend you to use our sample from this repo [link](https://github.com/projectpotos/potos-iso-builder/tree/main/config). 
-You find further information about that config directory [here](./config)
+For your first ISO build tests we recommend to use our sample from the following repo [link](https://github.com/projectpotos/potos-iso-builder/tree/main/config). 
+You can find further information about this config directory [here](./config)
 
 To build the iso yourself, you can choose between one of the following possibilities:
  * [Plain Docker](#build-iso)
@@ -57,5 +57,5 @@ jobs:
 ## Build your own container image
 
 If you want to build the build container image yourself, have a look at the [`potos-iso-builder`](https://github.com/projectpotos/potos-iso-builder) repo. 
-All the container relevant files are in the container subdirectory. And described in the [README](https://github.com/projectpotos/potos-iso-builder/blob/main/README.md)
+All the container relevant files are in the container subdirectory and are described in the [README](https://github.com/projectpotos/potos-iso-builder/blob/main/README.md)
 
