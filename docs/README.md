@@ -3,6 +3,9 @@ home: true
 title: Home
 heroImage: /logo.png
 actions:
+  - text: Introduction
+    link: /guide/introduction/
+    type: primary
   - text: Get Started
     link: /guide/getting-started/
     type: primary
@@ -13,7 +16,7 @@ features:
     details: By using SSSD, Potos is developed to integrate well with most Enterprise environments.
   - title: Open Source
     details: The project is licenced under the free GNU General Public License 3.
-footer: Project Potos - Your custom Linux Client
+footer: Project Potos - Productivity for Developers, Engineers & Scientists
 ---
 
 <hr>
