@@ -10,6 +10,7 @@ export const navbar = [
   {
     text: 'Guide',
     children: [
+      '/guide/introduction/',
       '/guide/getting-started/',
       {
         link: '/guide/iso-build/how-to-build',

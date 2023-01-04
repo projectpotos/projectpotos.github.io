@@ -8,6 +8,7 @@ function getFiles(dir) {
 }
 export const sidebar = {
   '/guide/': [
+    '/guide/introduction/',
     '/guide/getting-started/',
     {
       text: 'Iso Build',
