@@ -55,6 +55,7 @@ This is a special directory as files within this directory are available as temp
 
 This is a mandatory file for all Potos clients, as this file defines what role should be executed at which point in time.
 It is basically just a [ansible-galaxy](https://galaxy.ansible.com/) requirements file getting templated specifically for this playbook run.
+Although we extended it a little bit, to support more options for git via ssh, see [here](#ssh-deploy-key).
 
 As an example
 ```yaml
@@ -75,6 +76,27 @@ As an example
 Here the [`potos_firstboot`](https://github.com/projectpotos/ansible-role-potos_firstboot) role is executed just when the runtype is set as `setup`. In this case this means it is only executed once during the setup process.
 
 The roles [`potos_basics`](https://github.com/projectpotos/ansible-role-potos_basics.git) and [`potos_wallpaper`](https://github.com/projectpotos/ansible-role-potos_wallpaper.git) are then executed each time.
+
+### SSH Deploy key
+If you want to include private repos that need a deploy key, for one you can define it the following way
+```yaml
+- name: secret
+  src: git+git@github.com:projectpotos/ansible-role-potos_secret.git
+  version: 'main'
+  key_file: "{{ playbook_dir }}/potos_secret.rsa"
+- name: topsecret
+  src: git@github.com:projectpotos/ansible-role-potos_topsecret.git
+  scm: git
+  version: 'main'
+  key_file: "/etc/potos/topsecret.rsa"
+```
+For the first example you need to place the private deployment key in the specs repository under `/files/potos_secret.rsa`. For the second one, you need to ensure that the private key is available under the given absolute path. 
+::: warning
+The `key_file` path needs to be absolute and the key_file must have no more permissions than 0600, as else it will not be accepted as private key from openssl
+:::
+::: tip
+Dependent on your environment, you may want to reuse the deployment key of your specs repo. If so, set `key_file: /etc/potos/specs_key`
+:::
 
 
 ## molecule/
