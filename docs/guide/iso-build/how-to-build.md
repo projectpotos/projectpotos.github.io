@@ -15,7 +15,7 @@ If you want to build the build container yourself [link](#build-your-own-contain
 ### Docker plain
 
 1. Have a workdirectory with your [`config/`](./config) adjusted for your client
-2. Run `docker run -it -v $(pwd)/config:/config -v $(pwd)/output:/output ghcr.io/projectpotos/potos-iso-builder:latest`
+2. Run `docker run -it -v $(pwd)/config:/config:Z -v $(pwd)/output:/output:Z ghcr.io/projectpotos/potos-iso-builder:latest`
 3. Enjoy the iso in `output/`
 
 ### Docker compose
