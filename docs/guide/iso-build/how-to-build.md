@@ -45,7 +45,7 @@ jobs:
         with:
           image: ghcr.io/projectpotos/potos-iso-builder:latest
           run: ./build-iso
-          options: -v ${{ github.workspace }}:/config -v /output:/output
+          options: -v ${{ github.workspace }}/config:/config:Z -v /output:/output:Z
       - name: Save iso
         uses: actions/upload-artifact@v3
         with:
