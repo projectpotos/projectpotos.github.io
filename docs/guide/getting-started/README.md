@@ -53,7 +53,7 @@ This file defines the most basic things for the iso, such as how the client shou
         ```
      4. You may also want to adjust other values in `config/config.yml` such as `client_name`
      5. While developing you may want to enable debugging with `environment: "develop"`, but his may leak confidential informations to the enduser, so ensure to change back before deploying an image.
-     5. Go back to build the image and test your
+     5. Go back to build the image and test your changes. Your "Design - Build - Test - Learn" Cycle has just started :smiley: 
 10. For more information, have a look at the following resources
   * [Iso Build Config](/iso-build/config)
   * [All about the Specs repo](/specs-repo/overview)
