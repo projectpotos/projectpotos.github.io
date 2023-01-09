@@ -1,6 +1,6 @@
 # Introduction
 
-Linux clients (desktop) as provided by common Linux distributions (e.g. Fedora or Ubuntu) are usually installed and administrated by an individual end user. However, companies want to control the client's machines to ensure their basic configuration and security policies are applied. As these policies vary widely from company to company, the integration needs to be tailor-made for each company. 
+Linux clients (desktop) as provided by common Linux distributions (e.g. Ubuntu or Fedora) are usually installed and administrated by an individual end user. However, companies want to control the client's machines to ensure their basic configuration and security policies are applied. As these policies vary widely from company to company, the integration needs to be tailor-made for each company. 
 
 Nevertheless, in our experience, the basics are often relatively similar and our goal is to unify them with Potos. So to keep this short, the goal of Potos is to provide the foundation for tailor-made, enterprise-ready Linux clients to boost productivity for developers, engineers & scientists.
 

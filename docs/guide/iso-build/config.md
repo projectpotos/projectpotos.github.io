@@ -26,7 +26,7 @@ Define the Name of your Linux Client, e.g. "My Linux Client".
 #### client_name.short
 **Type**: *string, lowercase, short, regex `^([0-9a-z]{1,32})$`*, **Default**: `potos`
 
-Define a short name of your Linux Client. Use lowercase. Will be used for example for the log folder `/var/log/$POTOS_CLIENT_SHORTNAME`
+Define the short name of your Linux Client. Use lowercase. Will be used for example for the log folder `/var/log/$POTOS_CLIENT_SHORTNAME`
 
 #### disk_encryption.enable
 **Type**: *boolean --> `true`|`false`*, **Default**: `false`
@@ -91,7 +91,7 @@ Run type of the first ansible run
 #### full_unattended_install
 **Type**: *boolean --> `true`|`false`*, **Default**: `false`
 
-Disable security question before overwrite of disk and user input from iso side to allow a fully unattended installation
+Disable both the security question before overwriting the disk and  the user input from iso side to allow a fully unattended installation
 
 #### input.iso_filename
 **Type**: *string*, **Default**: `ubuntu-22.04.1-live-server-amd64.iso`
