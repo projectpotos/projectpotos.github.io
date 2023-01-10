@@ -118,7 +118,7 @@ Where to download the SHA256SUMS file if it doesn't exist locally
 
 What string should be used as Version identifier
 
-#### output.filename 
+#### output.iso_filename 
 **Type**: *string*, **Default**: `` `client_name.short`-installer-`environment`.iso``
 
 How the iso in the output directory should be named
