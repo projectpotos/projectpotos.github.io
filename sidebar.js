@@ -27,6 +27,10 @@ export const sidebar = {
       ]
     },
     {
+      text: 'Potos Roles',
+      link: '/guide/potos-roles/',
+    },
+    {
       text: 'Write your own Role',
       link: '/guide/own-role/',
       children: [

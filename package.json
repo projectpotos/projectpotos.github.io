@@ -22,5 +22,8 @@
   "homepage": "https://github.com/projectpotos/projectpotos.github.io#readme",
   "devDependencies": {
     "vuepress": "^2.0.0-beta.59"
+  },
+  "dependencies": {
+    "@hedgedoc/markdown-it-plugins": "^2.0.0"
   }
 }

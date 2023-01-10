@@ -40,6 +40,10 @@ export const navbar = [
     ],
   },
   {
+    text: 'Roadmap',
+    link: '/roadmap/',
+  },
+  {
     text: 'Jobs',
     link: 'https://adfinis.com/en/about-us/jobs/',
   },

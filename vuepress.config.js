@@ -1,5 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from 'vuepress'
+import { taskLists } from '@hedgedoc/markdown-it-plugins'
 import { sidebar } from './sidebar'
 import { navbar } from './navbar'
 
@@ -18,5 +19,8 @@ export default  {
     navbar,
     sidebar,
   }),
-  dest: './dist'
+  dest: './dist',
+  extendsMarkdown: (md) => {
+    md.use(taskLists)
+  }
 }
