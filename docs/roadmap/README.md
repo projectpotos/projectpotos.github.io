@@ -18,6 +18,7 @@ Potos is just in a relatively early phase. We are currently considering:
 * [ ] [Microsoft Defender ATP](https://www.microsoft.com/en-us/security/blog/microsoft-defender-advanced-threat-protection/) role
 * [ ] Generic Application configuration role
 * [ ] Generic Window Manager support
+* [ ] Certmonger role for automatic cert renewal 
 * [ ] LUKS Support for Yubikey
 * [ ] Support for "el / dnf" distros
 
