@@ -1,0 +1,1 @@
+import{_ as t,p as o,q as n,R as e}from"./framework-96b046e1.js";const c={},s=e("hr",null,null,-1),_=e("p",null,"Welcome to the Project Potos documentation!",-1),l=[s,_];function r(a,d){return o(),n("div",null,l)}const u=t(c,[["render",r],["__file","index.html.vue"]]);export{u as default};
