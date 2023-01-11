@@ -10,7 +10,7 @@ Potos is just in a relatively early phase. We are currently considering:
 * [ ] Generic sudo role
 * [ ] Generic firewall role
 * [ ] Generic package install role
-* [ ] SSSD with [AD](https://en.wikipedia.org/wiki/Active_Directory) / [UCS](https://en.wikipedia.org/wiki/Univention_Corporate_Server) / [OpenLdap](https://en.wikipedia.org/wiki/OpenLDAP)
+* [ ] SSSD with [AD](https://en.wikipedia.org/wiki/Active_Directory) / [UCS](https://en.wikipedia.org/wiki/Univention_Corporate_Server) / [OpenLdap](https://en.wikipedia.org/wiki/OpenLDAP) / [FreeIPA/RHEL IdM](https://www.freeipa.org)
 * [ ] Generic AppArmor / SELinux role
 * [ ] Generic dconf / gsettings role
 * [ ] Printer configuration role
