@@ -39,9 +39,11 @@ To enable autoinstall feature with disk encryption (except: /boot). You have to 
 The autoinstall feature with disk encryption (except: /boot) needs a predefined decryption password. You have to enter this password at first boot after the installation.
 
 #### specs.url
-**Type**: *string, URL, trailing slash*, **Default**: `https://github.com/projectpotos/`
+**Type**: *string, URL, trailing slash*, **Default**: `https://github.com/projectpotos`
 
-The URL to your Git Account that holds your own Potos Specs Repository. Make sure you have the trailing slash included.
+The URL to your Git Account that holds your own Potos Specs Repository.
+
+When accessing the specs repo via ssh this must be in the format `git@github.com:projectpotos`.
 
 #### specs.repo
 **Type**: *string, part of the URL*, **Default**: `ansible-specs-potos`
