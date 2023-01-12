@@ -15,14 +15,15 @@ If you want to build the build container yourself [link](#build-your-own-contain
 ### Docker plain
 
 1. Have a workdirectory with your [`config/`](./config) adjusted for your client
-2. Run `docker run -it -v $(pwd)/config:/config:Z -v $(pwd)/output:/output:Z ghcr.io/projectpotos/potos-iso-builder:latest`
-3. Enjoy the iso in `output/`
+2. Run `docker pull ghcr.io/projectpotos/potos-iso-builder:latest` to download the latest iso builder
+3. Run `docker run -it -v $(pwd)/config:/config:Z -v $(pwd)/output:/output:Z ghcr.io/projectpotos/potos-iso-builder:latest`
+4. Enjoy the iso in `output/`
 
 ### Docker compose
 
 1. Have a workdirectory with your [`config/`](./config) adjusted for your client
 2. Copy the `docker-compose.yml` file from [here](https://github.com/projectpotos/potos-iso-builder/blob/main/docker-compose.yml) to that directory
-3. Run `docker-compose up` in the main directory
+3. Run `docker-compose pull && docker-compose up` in the main directory
 4. Enjoy the iso in `output/`
 
 ### Github Workflow
