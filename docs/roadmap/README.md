@@ -6,7 +6,7 @@ Potos is just in a relatively early phase. We are currently considering:
 * [x] Basic Ansible-Pull mechanism
 * [x] First Boot Dialogs
 * [x] Integration of specs repository: Overwrite Potos role values and run your own, additional roles in combination with Potos Ansible-Pull.
-* [ ] Backport Support for [Ubuntu 20.04 LTS](https://releases.ubuntu.com/20.04/)
+* [x] Backport Support for [Ubuntu 20.04 LTS](https://releases.ubuntu.com/20.04/)
 * [ ] Generic sudo role
 * [ ] Generic firewall role
 * [ ] Generic package install role
