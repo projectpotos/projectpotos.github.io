@@ -18,7 +18,7 @@ This role interupts the execution, ensure it is only run during the first boot, 
 
 ## [potos_template](https://github.com/projectpotos/ansible-role-potos_template)
 
-This is not a real role, it is more a template based on which you can develop your own role. For more see [here](/own-role/)
+This is not a real role, it is more a template based on which you can develop your own role. For more see [here](/guide/own-role/)
 
 ::: tip
 Have a look at other roles on how things are done there e.g. [potos_wallpaper](#potos-wallpaper)
