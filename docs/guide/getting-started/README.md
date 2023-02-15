@@ -55,6 +55,6 @@ This file defines the most basic things for the iso, such as how the client shou
      5. While developing you may want to enable debugging with `environment: "develop"`, but his may leak confidential informations to the enduser, so ensure to change back before deploying an image.
      5. Go back to build the image and test your changes. Your "Design - Build - Test - Learn" Cycle has just started :smiley: 
 10. For more information, have a look at the following resources
-  * [Iso Build Config](/iso-build/config)
-  * [All about the Specs repo](/specs-repo/overview)
-  * [Write your own role](/own-role)
+  * [Iso Build Config](/guide/iso-build/config.html)
+  * [All about the Specs repo](/guide/specs-repo/overview.html)
+  * [Write your own role](/guide/own-role/)
