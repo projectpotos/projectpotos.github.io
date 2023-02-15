@@ -18,6 +18,12 @@ The iso build is configured using [YAML](https://en.wikipedia.org/wiki/YAML) bas
 The *dot-notation* of a config-key like `client_name.long` means `long` property within the `client_name` section. All *dot-notation* references are absolut.
 :::
 
+::: warning Breaking changes v1 to v2
+* Rename `specs.ansible-vault-key-file` to `specs.ansible_vault_key_file` because Python doesn't allow `-` in variable names
+* Replace `input.iso_filename`, `input.iso_url`, `input.sha256_filename`, `input.sha256_url` used to specify the iso with the new variable `os` predefining them
+* Replace `preinstall_packages` with the new variable `os` predefining them
+:::
+
 #### client_name.long
 **Type**: *string*, **Default**: `Potos Linux Client`
 
@@ -60,7 +66,7 @@ Define the branch of your specs.repo. Typical values are `main`, `master`, `deve
 
 Defines in what file inside the config directory the private ssh deployment key is stored, to be used when pulling the specs repo. The key is stored on the machine under /etc/potos/specs_key with permissions 0400.
 
-#### specs.ansible-vault-key-file
+#### specs.ansible_vault_key_file
 **Type**: *filename (string)*, **Default**: `*none*`
 
 Defines in what file inside the config directory stores your ansible-vault key. This can be a script to be evaluated on runtime. If a file is given, it is stored under /etc/potos/ansible_vault_key with permission 0700 and should then be given to each ansible execution with the cli param `--vault-password-file=/etc/potos/ansible_vault_key`
@@ -93,54 +99,43 @@ Run type of the first ansible run
 #### full_unattended_install
 **Type**: *boolean --> `true`|`false`*, **Default**: `false`
 
-Disable both the security question before overwriting the disk and  the user input from iso side to allow a fully unattended installation
+Disable both the security question before overwriting the disk and the user input from iso side to allow a fully unattended installation
 
-#### input.iso_filename
-**Type**: *string*, **Default**: `ubuntu-22.04.1-live-server-amd64.iso`
+#### os
+**Type**: *string", **Default**: `jammy`
 
-Name of the local iso file (needs to correspond with content of the SHA256SUMS file)
-
-#### input.iso_url
-**Type**: *string*, **Default**: `https://releases.ubuntu.com/22.04/ubuntu-22.04.1-live-server-amd64.iso`
-
-Where to download the iso file if it doesn't exist locally
-
-#### input.sha256_filename
-**Type**: *string*, **Default**: `SHA256SUMS`
-
-Name of the SHA256SUMS file
-
-#### input.sha256_url
-**Type**: *string*, **Default**: `https://releases.ubuntu.com/22.04/SHA256SUMS`
-
-Where to download the SHA256SUMS file if it doesn't exist locally
+Selection of what operating system the iso should base on.
+Currently the following options are supported:
+ * `jammy`: Ubuntu 22.04 LTS (Jammy)
+ * `focal`: Ubuntu 20.04 LTS (Focal)
 
 #### output.version
-**Type**: *string*, **Default**: `current date in yyyymmddd`
+**Type**: *string*, **Default**: `%Y%m%d`
 
-What string should be used as Version identifier
+What string should be used as Version identifier. Date variable substitution (e.g. `%Y` = 2023) is active on this variable.
 
 #### output.iso_filename 
 **Type**: *string*, **Default**: `` `client_name.short`-installer-`environment`.iso``
 
 How the iso in the output directory should be named
 
-#### preinstall_packages
-**Type**: *list of strings*, **Default**: 
-```yaml
- - python3-virtualenv
- - linux-generic-hwe-22.04
- - ubuntu-desktop
- - plymouth-theme-ubuntu-log
- - ldap-utils
- - yad
- ```
- 
- What packages should be installed with autoinstall. 
- * `python3-virtualenv`: python with virtualenv is required to install ansible within it 
- * `linux-generic-hwe-22.04`: install hwe kernel 
- * `ubuntu-desktop`: install gnome desktop 
- * `plymouth-theme-ubuntu-logo`: install plymouth-theme 
- * `ldap-utils`: ldap utils used for all the ldap integration things 
- * `yad`: used for graphical dialogs during setup
+#### isolinux.txtBackgroundColor
+**Type**: *string*, **Default**: `0xCCCCCC`
 
+If you use a system with isoboot, you can define the text color of the not currently selected options
+
+#### isolinux.txtForegroundColor
+**Type**: *string*, **Default**: `0xFFFFFF`
+
+If you use a system with isoboot, you can define the text color of the currently selected options
+
+#### isolinux.screenColor
+**Type**: *string*, **Default**: `0x161B21`
+
+If you use a system with isoboot, you can define the screen background color.
+
+## access.pcx
+If you use a system with isoboot, you can insert your custom `access.pcx`. If such a system is used and no file is placed, a default Potos one is used.
+
+## splash.pcx
+If you use a system with isoboot, you can insert your custom `splash.pcx`. If such a system is used and no file is placed, a default Potos one is used.
