@@ -10,12 +10,12 @@ actions:
     link: /guide/getting-started/
     type: primary
 features:
-  - title: OS Compatibility
-    details: The project aims to support various Operating Systems.
-  - title: Easy Integration
-    details: By using SSSD, Potos is developed to integrate well with most Enterprise environments.
-  - title: Open Source
-    details: The project is licenced under the free GNU General Public License 3.
+  - title: Adaptable
+    details: Get enterprise integrations out of the box & full self-service deployment process.
+  - title: Secure
+    details: Keep IP and product development secure & implement zero trust identity concept.
+  - title: Collaborative
+    details: Support continuous improvement & foster inner source mindset.
 footer: Potos - Productivity for Developers, Engineers & Scientists
 ---
 
