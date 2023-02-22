@@ -31,15 +31,6 @@ export const navbar = [
     ],
   },
   {
-    text: 'Advanced',
-    children: [
-      {
-        link: '/advanced/helloWorld/',
-        text: 'Hello World',
-      },
-    ],
-  },
-  {
     text: 'Roadmap',
     link: '/roadmap/',
   },
