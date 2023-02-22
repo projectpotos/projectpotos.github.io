@@ -18,3 +18,7 @@ features:
     details: The project is licenced under the free GNU General Public License 3.
 footer: Project Potos - Productivity for Developers, Engineers & Scientists
 ---
+
+<hr>
+
+Providing the necessary toolchain to your users can be challenging. With Linux Clients based on Potos, you can improve ease of use for your self or your technician teams by getting the essential tools and apps out of the box.
