@@ -6,8 +6,8 @@ import { navbar } from './navbar'
 
 export default  {
   lang: 'en-US',
-  title: 'Project Potos',
-  description: 'Productivity for Developers, Engineers & Scientists',
+  title: 'Potos',
+  description: 'The foundation for tailor-made, enterprise-ready Linux Clients to boost productivity for developers, engineers & scientists.',
   theme: defaultTheme({
     logo: '/logo.png',
     repo: 'https://github.com/projectpotos',
