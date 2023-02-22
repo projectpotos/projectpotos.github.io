@@ -10,8 +10,8 @@ actions:
     link: /guide/getting-started/
     type: primary
 features:
-  - title: "OS Compatibility"
-    details: "The project aims to support various Operating Systems."
+  - title: OS Compatibility
+    details: The project aims to support various Operating Systems.
   - title: Easy Integration
     details: By using SSSD, Potos is developed to integrate well with most Enterprise environments.
   - title: Open Source
