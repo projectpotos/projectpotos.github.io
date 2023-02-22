@@ -3,7 +3,7 @@ home: true
 title: Home
 heroImage: /logo.png
 actions:
-  - text: Introduction
+  - text: About
     link: /guide/introduction/
     type: primary
   - text: Get Started
@@ -18,7 +18,3 @@ features:
     details: The project is licenced under the free GNU General Public License 3.
 footer: Project Potos - Productivity for Developers, Engineers & Scientists
 ---
-
-<hr>
-
-Welcome to the Project Potos documentation! 
