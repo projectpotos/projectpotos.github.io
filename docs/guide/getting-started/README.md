@@ -1,6 +1,6 @@
 # Getting Started
 
-You want to tailor-made your own Linux client for you, your company or someone else? Potos can be your foundation.
+You want to tailor-make your own Linux client for you, your company or someone else? Potos can be your framework.
 
 Here you will find some instructions on how to set up your own Linux client based on Potos. But the best way of getting to know Potos is simply by try it yourself. Don't be scared by the unknown territory :wink:
 
