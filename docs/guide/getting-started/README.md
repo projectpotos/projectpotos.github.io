@@ -37,6 +37,10 @@ This file defines the most basic things for the iso, such as how the client shou
     ```bash
     docker run -it -v $(pwd)/config:/config -v $(pwd)/output:/output ghcr.io/projectpotos/potos-iso-builder:latest
     ```
+    SELinux may prevent access to `config` and `output`. (`PermissionError: [Errno 13] Permission denied: '/config/config.yml'`.) Add `:z` to each mapped volume:
+    ```bash
+    docker run -it -v $(pwd)/config:/config:z -v $(pwd)/output:/output:z ghcr.io/projectpotos/potos-iso-builder:latest
+    ```
  6. Create a new VM using the iso in the `output` directory
  7. Just follow the setup dialog on first boot
  8. Enjoy a Linux Client based on Ubuntu 22.04 LTS, with a potos wallpaper that is regularly enforced.
