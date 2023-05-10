@@ -17,6 +17,7 @@ For the iso generation, the main thing you need is a [config directory](/guide/i
 This file defines the most basic things for the iso, such as how the client should be named or where to look for the "Specs Repository".
 
 ## Sample Client build - Tutorial
+### Unchanged Potos Vanilla Client
  1. Ensure you have `git`, `docker` and possibility to run a virtual machine (e.g. kvm, virtualbox, vmware, etc) installed
    ```bash
    git --version
@@ -44,6 +45,7 @@ This file defines the most basic things for the iso, such as how the client shou
  6. Create a new VM using the iso in the `output` directory
  7. Just follow the setup dialog on first boot
  8. Enjoy a Linux Client based on Ubuntu 22.04 LTS, with a potos wallpaper that is regularly enforced.
+ ### Changing client
  9. As a next step you probably want your own Specs Repository for this you need
      1. Go to [github.com/projectpotos/ansible-specs-potos](https://github.com/projectpotos/ansible-specs-potos) and click on 
      `Use this template` > `Create a new repository` to create your own specs repository.
@@ -62,3 +64,39 @@ This file defines the most basic things for the iso, such as how the client shou
   * [Iso Build Config](/guide/iso-build/config.html)
   * [All about the Specs repo](/guide/specs-repo/overview.html)
   * [Write your own role](/guide/own-role/)
+## Custom role - Development Example - Tutorial
+Due to the nature of such Linux clients, Potos has a lot of different parts that need to work together. So we recommend you read the different parts of [Write your own role](/guide/own-role/). How ever this quick tutorial should help you getting started with a custom role.
+### Role Development Environment
+1. Have a Linux Client running, on where you can write some Ansible but also directly run and apply the changes. If you don't have your own client yet, we recommend the Vanilla Client from above.
+2. Create yourself a working directory `mkdir ~/potos-development` to working `cd ~/potos-development`
+3. Create a directory for roles in that dir `mkdir roles`
+4. Clone the role template `git clone https://github.com/projectpotos/ansible-role-potos_template roles/my_role`
+5. Create a short playbook `test.yml` (you can add/remove roles you want to test at the end)
+```yaml
+---
+- name: Test Role playboo
+  hosts: all
+  gather_facts: yes
+  vars:
+    potos_variables_you_want_set: "potos"
+  tasks:
+    - name: run roles
+      ansible.builtin.include_role:
+        name: "{{ item }}"
+      loop:
+        - my_role
+```
+6. Now you can edit, test and run the role with `ansible-playbook test.yml` or to get more verbose `ansible-playbook test,yml --diff -vv`
+### Minimal Role >>> Full Role
+7. Write the Ansible task that should happen to `tasks/main.yml`. 
+  * If you want/need to parameterize anything you can use `defaults/main.yml`
+  * For templates just use the `templates` directory
+  * When you need files withoutu templating, you may create a directory `files` and store the files in there
+8. Once your role works, adjust all the files around it:
+  * `README.md`
+  * `CODEOWNERS.md`
+  * `meta/main.yml`
+  * `meta/argument_specs.yml`
+9. Write testing for the role with Molecule: see [here](/guide/own-role/molecule.html)
+
+
