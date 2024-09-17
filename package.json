@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/projectpotos/projectpotos.github.io#readme",
   "devDependencies": {
-    "vuepress": "^2.0.0-rc.0"
+    "vuepress": "^2.0.0-rc.15"
   },
   "dependencies": {
     "@hedgedoc/markdown-it-plugins": "^2.0.0"
