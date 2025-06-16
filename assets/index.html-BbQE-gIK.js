@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5d588a76","path":"/guide/faq/","title":"Frequently Asked Questions (FAQ)","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"1. What does Potos mean?","slug":"_1-what-does-potos-mean","link":"#_1-what-does-potos-mean","children":[]}],"git":{"updatedTime":1750059444000},"filePathRelative":"guide/faq/README.md"}');export{e as data};

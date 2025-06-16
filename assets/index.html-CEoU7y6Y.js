@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-483b2606","path":"/guide/own-role/","title":"Create your own role","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1750059444000},"filePathRelative":"guide/own-role/README.md"}');export{e as data};

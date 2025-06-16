@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5e89c3a7","path":"/guide/own-role/ansible_basics.html","title":"Ansible Basics","lang":"en-US","frontmatter":{"prev":{"link":"../specs-repo/structure.md","text":"Specs Repository - Structure"}},"headers":[],"git":{"updatedTime":1750059444000},"filePathRelative":"guide/own-role/ansible_basics.md"}');export{e as data};
