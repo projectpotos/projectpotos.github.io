@@ -21,5 +21,6 @@ Potos is just in a relatively early phase. We are currently considering:
 * [ ] Certmonger role for automatic cert renewal 
 * [ ] LUKS Support for Yubikey
 * [ ] Support for "el / dnf" distros
+* [ ] Support Ubuntu 24.04 LTS
 
 
